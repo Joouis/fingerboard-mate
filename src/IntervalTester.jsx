@@ -8,11 +8,30 @@ const Intervals = ['m2', 'M2', 'm3', 'M3', 'P4', 'd5', 'A4', 'P5', 'm6', 'M6', '
 export const IntervalTester = () => {
   return (
     <div>
-      Please perform:<br /><br />
-      <ul>
-        <li><b>{sample(Roots)}</b> on <b>{sample(Strings)}</b> string</li>
-        <li>Its all <b>{sample(Intervals)}</b> notes</li>
-      </ul>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "40vh" }}>
+        <div>Please perform:<br /><br /></div>
+        <div>
+          <b style={{ fontSize: "1.5rem" }}>{sample(Roots)}</b> on <b style={{ fontSize: "1.5rem" }}>{sample(Strings)}</b> string and all <b style={{ fontSize: "1.5rem" }}>{sample(Intervals)}</b> notes
+        </div>
+      </div>
+      <div>
+        <h4>Intervals</h4>
+        <ul>
+          <li>m2: Minor second</li>
+          <li>M2: Major second</li>
+          <li>m3: Minor third</li>
+          <li>M3: Major third</li>
+          <li>P4: Perfect fourth</li>
+          <li>d5: Diminished fifth</li>
+          <li>A4: Augmented fourth</li>
+          <li>P5: Perfect fifth</li>
+          <li>m6: Minor sixth</li>
+          <li>M6: Major sixth</li>
+          <li>m7: Minor seventh</li>
+          <li>M7: Major seventh</li>
+          <li>P8: Perfect octave</li>
+        </ul>
+      </div>
     </div>
   );
 };
